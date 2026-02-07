@@ -1,0 +1,52 @@
+.header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #f8f2dc;
+color: #fff;
+padding: 12px 20px;
+}
+
+.logo img {
+height: 80px;
+width: auto;
+}
+.title {
+text-align: center;
+flex: 1;
+color: #000;
+}
+
+
+.title h1 {
+font-size: 28px;
+margin: 0;
+font-weight: 700;
+}
+
+
+.title p {
+margin: 4px 0;
+font-size: 14px;
+}
+@media (max-width: 768px) {
+.header {
+flex-direction: column;
+gap: 10px;
+}
+
+
+.logo img {
+height: 60px;
+}
+
+
+.title h1 {
+font-size: 20px;
+}
+
+
+.title p {
+font-size: 12px;
+}
+}

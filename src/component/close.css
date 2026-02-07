@@ -1,0 +1,68 @@
+.hero {
+  min-height: calc(100vh - 120px); /* leaves space for navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+  text-align: center;
+  height: 100vh;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1000px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo */
+.college-logo {
+  width: clamp(80px, 15vw, 120px);
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Text */
+.college-name {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.dept {
+  font-size: clamp(13px, 2vw, 14px);
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.present {
+  font-size: 13px;
+  margin: 14px 0;
+}
+
+/* Main title */
+.title {
+  font-size: clamp(32px, 6vw, 64px);
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 12px 0;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: clamp(15px, 2.8vw, 18px);
+  margin-bottom: 20px;
+}
+
+/* Mobile fine tuning */
+@media (max-width: 480px) {
+  .title {
+    letter-spacing: 1px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 60px;
+  }
+}

@@ -1,0 +1,110 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+
+.college-logo {
+margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.college-name {
+  font-weight: 600;
+  font-size:30px;
+}
+
+.dept {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.present {
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+.title {
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: decaydence;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.count-box {
+  background: #fff;
+  padding: 12px 16px;
+  border-radius: 12px;
+  min-width: 80px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.count {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.label {
+  font-size: 10px;
+  color: #777;
+}
+
+.date {
+  margin: 15px 0;
+}
+
+.cta {
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: #b5651d;
+  color: white;
+}
+
+.btn.secondary {
+  background: #eee;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 240px;
+  }
+}
